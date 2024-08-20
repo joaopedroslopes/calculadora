@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container_header">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="box-content">
+            <div class="result">
+                <p id="result-display">Resultado</p>
+            </div>
+            <div class="buttons line-0">
+                <input type="button" value="C" onclick="clearDisplay()" id="clear-button">
+                <input type="button" value="()">
+                <input type="button" value="%" class="operator">
+                <input type="button" value="÷" onclick="specialLiveUpdate('÷')" class="operator">
+            </div>
+            <div class="buttons line-1">
+                <input type="button" value="7" onclick="liveUpdate(7)">
+                <input type="button" value="8" onclick="liveUpdate(8)">
+                <input type="button" value="9" onclick="liveUpdate(9)">
+                <input type="button" value="x" onclick="specialLiveUpdate('x')" class="operator">
+            </div>
+            <div class="buttons line-2">
+                <input type="button" value="4" onclick="liveUpdate(4)">
+                <input type="button" value="5" onclick="liveUpdate(5)">
+                <input type="button" value="6" onclick="liveUpdate(6)">
+                <input type="button" value="-" onclick="liveUpdate('-')" class="operator">
+            </div>
+            <div class="buttons line-3">
+                <input type="button" value="1" onclick="liveUpdate(1)">
+                <input type="button" value="2" onclick="liveUpdate(2)">
+                <input type="button" value="3" onclick="liveUpdate(3)">
+                <input type="button" value="+" onclick="liveUpdate('+')" class="operator">
+            </div>
+            <div class="buttons line-4">
+                <input type="button" value="+/-">
+                <input type="button" value="0" onclick="liveUpdate(0)">
+                <input type="button" value=",">
+                <input type="button" value="=" onclick="calculate()" class="operator">
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script/script.js" ></script>
+</body>
+</html>

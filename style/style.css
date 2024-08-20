@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-dark-background: #121111;
+    --color-dark: #363434;
+    --color-dark-hover:#555252;
+    --color-cream: #f4f4f4;
+    --color-red: #ff0000;
+    --color-purple: #8a2be2;
+    --color-purple-hover: #954bd9;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-cream);
+    background-color: var(--color-dark-background);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -60px;
+}
+
+.container_header{
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+}
+
+.box-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons input{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-dark);
+    color: var(--color-cream);
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.buttons input:hover{
+    background-color: var(--color-dark-hover);
+    transition: 0.5s;
+}
+
+.buttons input.operator{
+    background-color: var(--color-purple);
+}
+
+.buttons input.operator:hover{
+    background-color: var(--color-purple-hover);
+}
+
+#clear-button{
+    color: var(--color-red);
+    font-size: 2rem;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 50px;
+    background-color: var(--color-dark);
+    margin-bottom: 10px;
+    padding: 0 15px;
+    border-radius: 100px;
+}
+
+#result-display{
+    width: 100%;
+}
